@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Admin Dashboard</title>
+</head>
+<body>
+
+<br><br>
+	
+	<div class="container p-3 my-3 border  bg-light text-dark " >
+   <center class=><h1 class="text-Seconday">Admin Dashboard</h1></center>
+   <br>
+   <center>
+   		<p><b>ID:</b> ${isAdmin.id} || 
+   		<b>NAME:</b> ${isAdmin.admin_name} ||  
+   		<b>EMAIL:</b> ${isAdmin.email} || 
+   		<b>MOB:</b> ${isAdmin.mob}</p>
+   </center>
+   <hr><br>
+   <form action="AdminController">
+	<center>
+		 <button type="submit" class="btn btn-primary" name="command" value="userDetail">User Information</button><br><br>
+         <button type="submit" class="btn btn-secondary" name="command" value="passbookAdmin">Transaction Details</button><br><br>
+         <a href="LogoutController" class="btn btn-danger">Logout</a> 
+	
+	</center>
+	</form>
+</div>
+
+
+</body>
+</html>

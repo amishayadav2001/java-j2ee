@@ -1,0 +1,26 @@
+// validation.js
+
+function validateForm() {
+    var firstname = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+
+    if (firstname === "") {
+        alert("First name must be filled out");
+        return false;
+    }
+
+    if (lastname === "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Email must be filled out");
+        return false;
+    }
+
+    // You can add more specific validation rules for email format, etc.
+
+    return true;
+}

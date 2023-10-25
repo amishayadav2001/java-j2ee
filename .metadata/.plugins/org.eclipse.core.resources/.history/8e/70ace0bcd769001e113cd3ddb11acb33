@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentUtil {
+	
+	private List<Student> allStudents;
+	
+	public StudentUtil() {
+		allStudents = new ArrayList<>();
+		allStudents.add(new Student(1, "Amisha", "amisha@gmail.com", 95));
+		
+	}
+
+}

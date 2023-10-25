@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;02-jstl-tag&apos; to &apos;02-jstl-tags&apos;" description="Rename resource &apos;02-jstl-tag&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/02-jstl-tag" name="02-jstl-tags" stamp="1697093429723" updateReferences="true"/>
+</session>

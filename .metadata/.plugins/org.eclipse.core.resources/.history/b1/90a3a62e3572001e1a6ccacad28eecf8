@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container p-3 my-3 border border-primary bg-light text-dark">
+    <form action="UserController">
+        <center>
+            <h4 style="font-weight: bold; color: #007BFF;">Edit User Information</h4>
+        </center>
+        <hr>
+        <button type="button" name="back" onclick="history.back()" class="btn btn-link">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+
+        <br> <br>
+        <label for="user_name" style="font-weight: bold; font-size: 18px; color: #007BFF;">Name :</label>
+        <input type="text" class="w-100 form-control" name="user_name" value="${user.user_name}" required>
+        <br><br>
+
+        <label for="email" style="font-weight: bold; font-size: 18px; color: #007BFF;">Email :</label>
+        <input type="text" class="w-100 form-control" name="email" value="${user.email}" id="email" onkeyup="validateEmail()" required>
+        <br> <br>
+
+        <label for="pass" style="font-weight: bold; font-size: 18px; color: #007BFF;">Password :</label>
+        <input type="text" class="w-100 form-control" name="pass" value="${user.pass }" id="pass" onkeyup="validatePassword()" required>
+        <br> <br>
+
+        <label for="mob" style="font-weight: bold; font-size: 18px; color: #007BFF;">Mobile No :</label>
+        <input type="text" class="w-100 form-control" name="mob" value="${user.mob }" id="mob" onkeyup="validateMobile()" required>
+        <br>
+
+        <input type="hidden" name="command" value="update">
+        <input type="hidden" name="acc_no" value="${user.acc_no}">
+
+        <center>
+            <button type="submit" class="btn btn-primary w-50 mt-3" style="background-color: #007BFF; border: 1px solid #007BFF;">Save Update</button>
+        </center>
+
+        <br> <br>
+    </form>
+    <p style="font-style: italic; font-size: 14px; color: #FF0000;">
+        Note: On change of either Email or Password, you'll be redirected to the Login Page.
+        There you need to use your new updated Credentials.
+    </p>
+</div>
+
+</body>
+</html>

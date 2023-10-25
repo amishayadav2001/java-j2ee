@@ -1,0 +1,220 @@
+package com.aurionpro.controller;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
+
+import com.aurionpro.jdbc.EmployeeDbUtil;
+import com.aurionpro.model.Employee;
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+
+/**
+ * Servlet implementation class StudentController
+ */
+@WebServlet("/EmployeeController")
+public class EmployeeController extends HttpServlet {
+	@Resource(name = "jdbc/employee-source")
+	private DataSource datasource;
+
+	private EmployeeDbUtil dbUtil;
+
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		dbUtil = new EmployeeDbUtil(datasource);
+	}
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public EmployeeController() {
+		super();
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String command = request.getParameter("action");
+		if (command == null) {
+			command = "list";
+		}
+		switch (command) {
+		case "list":
+
+			try {
+				try {
+					listEmployee(request, response);
+				} catch (java.text.ParseException e) {
+					e.printStackTrace();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+			break;
+
+		case "add":
+
+			try {
+				try {
+					addEmployee(request, response);
+				} catch (java.text.ParseException e) {
+					e.printStackTrace();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+			// System.out.println("add operation");
+			break;
+
+		case "update":
+			try {
+				try {
+					getEmployeeForUpdate(request, response);
+				} catch (java.text.ParseException e) {
+					e.printStackTrace();
+				}
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			break;
+
+		case "update-save":
+			try {
+				try {
+					updateEmployee(request, response);
+				} catch (java.text.ParseException e) {
+					e.printStackTrace();
+				}
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			break;
+
+		case "delete":
+			try {
+				deleteEmployee(request, response);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			break;
+
+		// case "search":
+		// try {
+		// search(request, response);
+		// } catch (SQLException e) {
+		// e.printStackTrace();
+		// }
+		// break;
+
+		default:
+			try {
+				listEmployee(request, response);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+		}
+		// listEmployee(request, response);
+		// System.out.println("Hello");
+		// System.out.println(request.getParameter("action"));
+	}
+
+	// private void search(HttpServletRequest request, HttpServletResponse response)
+	// throws ServletException, IOException, SQLException {
+	// String value = request.getParameter("searchValue");
+	// String option = request.getParameter("searchOption");
+	//
+	// List<Employee> employees = dbUtil.searchEmployee(option, value);
+	//
+	// RequestDispatcher dispatcher =
+	// request.getRequestDispatcher("/list-employees.jsp");
+	// request.setAttribute("allEmployees", employees);
+	// dispatcher.forward(request, response);
+	//
+	// }
+
+	private void deleteEmployee(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException, SQLException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		dbUtil.deleteEmployee(id);
+		listEmployee(request, response);
+
+	}
+
+	private void updateEmployee(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, ServletException, IOException, java.text.ParseException {
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String dobStr = request.getParameter("dob");
+		String gender = request.getParameter("gender");
+		String designation = request.getParameter("designation");
+
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		Date dob = dateFormat.parse(dobStr);
+
+		Employee emp = new Employee(name, email, dob, gender, designation);
+		dbUtil.updateEmployee(emp);
+		response.sendRedirect(request.getContextPath() + "/EmployeeController");
+
+	}
+
+	private void getEmployeeForUpdate(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, ServletException, IOException, java.text.ParseException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		Employee employee = dbUtil.getEmployeeById(id);
+		// System.out.println(employee);
+		request.setAttribute("employee", employee);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/update-employee.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	private void addEmployee(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException, SQLException, java.text.ParseException {
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String dobStr = request.getParameter("dob");
+		String gender = request.getParameter("gender");
+		String designation = request.getParameter("designation");
+
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		Date dob = dateFormat.parse(dobStr);
+
+		Employee emp = new Employee(name, email, dob, gender, designation);
+		dbUtil.addNewEmployee(emp);
+		response.sendRedirect(request.getContextPath() + "/EmployeeController");
+
+	}
+
+	/**
+	 * @throws SQLException
+	 * @throws java.text.ParseException 
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void listEmployee(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException, SQLException, java.text.ParseException {
+		List<Employee> employeeList = dbUtil.getAllEmployees();
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/list-employees.jsp");
+		request.setAttribute("allEmployees", employeeList);
+		dispatcher.forward(request, response);
+	}
+
+}

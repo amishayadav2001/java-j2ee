@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>BeerSelect</servlet-name>
+        <servlet-class>com.aurionpro.model.BeerSelect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeerSelect</servlet-name>
+        <url-pattern>/BeerSelect</url-pattern>
+    </servlet-mapping>
+</web-app>

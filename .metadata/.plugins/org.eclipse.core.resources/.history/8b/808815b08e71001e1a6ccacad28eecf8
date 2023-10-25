@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>User Dashboard</title>
+<style>
+body {
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+	background-color: #007bff;
+	color: #fff;
+}
+
+.btn-custom {
+	margin: 10px;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+
+	<%-- <div class="container p-3 my-3 border  bg-light text-dark ">
+		<center class=>
+			<h1 class="text-Seconday">USER DASHBOARD</h1>
+		</center>
+		<br>
+		<center>
+			<p>
+				<b>Acc No:</b> ${isUser.acc_no} || <b>NAME:</b> ${isUser.user_name} || <b>EMAIL:</b>
+				${isUser.email} || <b>MOB:</b> ${isUser.mob} || <b>Balance:</b> ${balance}
+			</p>
+		</center>
+
+		<hr>
+		<c:set var="acc_no" value="${acc_no}" />
+		<c:url var="printPassbookLink" value="UserController">
+			<c:param name="command" value="passbook"></c:param>
+			<c:param name="acc_no" value="${isUser.acc_no}"></c:param>
+		</c:url>
+
+		<c:url var="userTransactionLink" value="UserController">
+			<c:param name="command" value="accInfo"></c:param>
+			<c:param name="acc_no" value="${isUser.acc_no}"></c:param>
+			<c:param name="balance" value="${balance}"></c:param>
+
+		</c:url>
+
+		<c:url var="loadUserLink" value="UserController">
+			<c:param name="command" value="load"></c:param>
+			<c:param name="acc_no" value="${isUser.acc_no}"></c:param>
+		</c:url>
+
+		<center>
+			<td><a href="${userTransactionLink}">
+					<button type="button" class="btn btn-primary"
+						name="command" value="transaction">Transaction</button>
+			</a> <br> <br> <a href="${printPassbookLink}">
+					<button type="button" class="btn btn-primary">Print Passbook</button>
+			</a><br> <br> <a href="${loadUserLink}">
+					<button type="button"
+						class="btn btn-outline-success ">Edit
+						User Information</button>
+			</a> <br> <br> <a href="LogoutController" class="btn btn-outline-danger"> Logout</a>
+				<hr>
+		</center>
+	</div>
+ --%>
+
+	<div class="container mt-4">
+		<h1 class="mb-4">USER DASHBOARD</h1>
+
+		<div class="alert">
+			<p>Acc No: 1001 || NAME: Amisha Yadav || EMAIL: amisha@gmail.com
+				|| MOB: 8369033866 || Balance: $10,000.0</p>
+		</div>
+
+		<h2>Transaction</h2>
+		<form action="TransactionController" method="post">
+			<div class="mb-3">
+				<label for="transactionAmount" class="form-label">Enter
+					Amount:</label> <input type="number" class="form-control"
+					name="transactionAmount" id="transactionAmount" required>
+			</div>
+			<button type="submit" class="btn btn-success">Submit
+				Transaction</button>
+		</form>
+
+		<h2>Options</h2>
+		<a href="PrintPassbookController" class="btn btn-custom btn-primary">Print
+			Passbook</a> <a href="EditUserInfoController"
+			class="btn btn-custom btn-warning">Edit User Information</a> <a
+			href="LogoutController" class="btn btn-custom btn-secondary">Logout</a>
+	</div>
+
+
+
+
+
+
+</body>
+</html>

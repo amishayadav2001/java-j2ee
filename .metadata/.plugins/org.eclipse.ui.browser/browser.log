@@ -1,0 +1,106 @@
+
+Oct 06, 2023 10:12:21.81 NEW SESSION
+Oct 06, 2023 10:12:21.81 [25368:6680:1006/101221.811:ERROR:device_event_log_impl.cc(225)] [10:12:21.817] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 06, 2023 10:12:21.84 [25368:24332:1006/101221.842:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 06, 2023 10:12:21.84 [25368:24332:1006/101221.842:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+Oct 06, 2023 10:12:46.04 [25368:24332:1006/101246.046:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 06, 2023 10:12:50.91 [25368:24332:1006/101250.917:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+Oct 06, 2023 10:13:29.04 [25368:24332:1006/101329.031:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 06, 2023 10:13:48.28 [25368:24332:1006/101348.280:ERROR:checkin_request.cc(243)] Check-in request got net error: -106
+Oct 06, 2023 10:30:55.88 [25368:24332:1006/103055.882:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 06, 2023 10:31:55.51 [25368:6680:1006/103155.506:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 06, 2023 10:35:09.15 [25368:6680:1006/103509.159:ERROR:device_event_log_impl.cc(225)] [10:35:09.162] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 06, 2023 10:35:57.00 [25368:24332:1006/103556.999:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 06, 2023 10:36:14.43 [25368:24332:1006/103614.428:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 06, 2023 10:36:36.40 [25368:24332:1006/103636.405:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 06, 2023 10:36:43.05 [25368:24332:1006/103643.044:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 06, 2023 10:52:13.71 [25368:24332:1006/105213.716:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 06, 2023 13:30:38.74 [25368:6680:1006/133038.747:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+Oct 12, 2023 20:43:18.48 NEW SESSION
+Oct 12, 2023 20:43:18.48 [10780:25552:1012/204318.432:ERROR:device_event_log_impl.cc(225)] [20:43:18.441] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 12, 2023 20:43:18.57 [10780:26888:1012/204318.570:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 20:43:45.43 [10780:26888:1012/204345.435:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 20:44:37.99 [10780:26888:1012/204437.998:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 20:44:56.58 [10780:25552:1012/204456.581:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 12, 2023 20:47:21.30 [10780:26888:1012/204721.304:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 12, 2023 20:47:47.78 [10780:26888:1012/204747.761:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 20:48:47.23 [10780:26888:1012/204847.230:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 20:52:40.15 [10780:26888:1012/205240.128:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 12, 2023 21:00:53.57 [10780:26888:1012/210053.575:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Oct 16, 2023 15:00:36.74 NEW SESSION
+Oct 16, 2023 15:00:36.74 [27612:27892:1016/150036.732:ERROR:device_event_log_impl.cc(225)] [15:00:36.736] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 16, 2023 15:00:36.77 [27612:13600:1016/150036.775:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 16, 2023 15:02:10.61 [7228:25792:1016/150210.618:ERROR:device_event_log_impl.cc(225)] [15:02:10.622] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 16, 2023 15:02:10.66 [7228:20640:1016/150210.665:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 16, 2023 15:02:38.74 [7228:20640:1016/150238.746:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 16, 2023 15:03:26.11 [7228:20640:1016/150326.094:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 16, 2023 15:04:47.32 [7228:20640:1016/150447.317:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Oct 16, 2023 18:41:02.57 NEW SESSION
+Oct 16, 2023 18:41:02.57 [22328:21780:1016/184102.561:ERROR:device_event_log_impl.cc(225)] [18:41:02.560] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+
+Oct 17, 2023 18:36:30.91 NEW SESSION
+Oct 17, 2023 18:36:30.91 [17984:18532:1017/183630.816:ERROR:device_event_log_impl.cc(225)] [18:36:30.827] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 17, 2023 18:36:30.98 [17984:11540:1017/183630.983:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 17, 2023 18:36:57.39 [17984:11540:1017/183657.392:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 17, 2023 18:37:54.14 [17984:11540:1017/183754.144:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 17, 2023 18:38:27.87 [17984:11540:1017/183827.873:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 17, 2023 20:00:30.18 [17984:11540:1017/200030.189:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+
+Oct 18, 2023 10:27:43.25 NEW SESSION
+Oct 18, 2023 10:27:43.25 [13216:28916:1018/102743.143:ERROR:device_event_log_impl.cc(225)] [10:27:43.139] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 18, 2023 10:46:09.51 [13216:28916:1018/104609.509:ERROR:device_event_log_impl.cc(225)] [10:46:09.508] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 18, 2023 10:47:43.83 [13216:28916:1018/104743.829:ERROR:device_event_log_impl.cc(225)] [10:47:43.830] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 18, 2023 12:32:18.22 [13216:21716:1018/123218.224:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 18, 2023 14:46:57.85 [29120:21792:1018/144657.853:ERROR:device_event_log_impl.cc(225)] [14:46:57.853] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 18, 2023 14:46:57.89 [29120:26292:1018/144657.895:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 18, 2023 14:47:22.58 [29120:26292:1018/144722.582:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+Oct 20, 2023 17:43:43.27 NEW SESSION
+Oct 20, 2023 17:43:43.27 [20472:28376:1020/174343.248:ERROR:device_event_log_impl.cc(225)] [17:43:43.242] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 20, 2023 17:50:44.79 [20472:28376:1020/175044.794:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 20, 2023 17:52:32.13 [20472:28376:1020/175232.136:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 20, 2023 18:37:58.22 [20472:28376:1020/183758.216:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 20, 2023 19:04:48.14 ERROR: Client requested cancel during Invoke()
+
+Oct 20, 2023 22:19:38.44 NEW SESSION
+Oct 20, 2023 22:19:38.44 [31320:22108:1020/221938.445:ERROR:device_event_log_impl.cc(225)] [22:19:38.444] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 20, 2023 22:19:38.51 [31320:17520:1020/221938.509:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 20, 2023 22:20:07.92 [31320:17520:1020/222007.921:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 20, 2023 22:20:54.93 [31320:17520:1020/222054.928:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 20, 2023 22:22:17.29 [31320:17520:1020/222217.291:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 20, 2023 22:25:47.86 [31320:17520:1020/222547.861:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 20, 2023 22:30:08.39 [31320:17520:1020/223008.392:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 20, 2023 23:31:50.36 [31320:17520:1020/233150.357:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 20, 2023 23:48:25.32 [31320:22108:1020/234825.326:ERROR:device_event_log_impl.cc(225)] [23:48:25.327] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 21, 2023 09:50:53.95 [23248:28116:1021/095053.957:ERROR:device_event_log_impl.cc(225)] [09:50:53.961] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 21, 2023 10:34:33.46 [23248:28116:1021/103433.464:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 21, 2023 10:36:41.43 [23248:28116:1021/103641.431:ERROR:device_event_log_impl.cc(225)] [10:36:41.432] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 21, 2023 11:04:31.15 [23248:28116:1021/110431.151:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 21, 2023 11:05:19.14 [23248:28116:1021/110519.148:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 21, 2023 11:05:53.80 [23248:28116:1021/110553.804:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 21, 2023 11:25:59.78 [23248:28116:1021/112559.783:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 21, 2023 18:07:27.20 [25760:21736:1021/180727.205:ERROR:device_event_log_impl.cc(225)] [18:07:27.204] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 21, 2023 18:19:41.82 [25760:19404:1021/181412.247:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 21, 2023 19:21:25.14 [25760:19404:1021/183523.812:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 21, 2023 19:21:25.19 [25760:19404:1021/192125.198:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -109
+Oct 21, 2023 19:21:29.26 [25760:19404:1021/192129.263:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 21, 2023 19:21:34.27 [25760:19404:1021/192134.273:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 21, 2023 20:52:38.63 [7292:26344:1021/205238.629:ERROR:device_event_log_impl.cc(225)] [20:52:38.622] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 24, 2023 10:26:35.66 [31404:25196:1024/102635.667:ERROR:device_event_log_impl.cc(225)] [10:26:35.667] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 24, 2023 10:27:56.82 [1560:24960:1024/102756.823:ERROR:device_event_log_impl.cc(225)] [10:27:56.823] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 24, 2023 10:31:35.80 [27096:28740:1024/103135.803:ERROR:device_event_log_impl.cc(225)] [10:31:35.803] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 24, 2023 10:32:26.19 [31856:1968:1024/103226.195:ERROR:device_event_log_impl.cc(225)] [10:32:26.195] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+Oct 24, 2023 12:15:57.01 [31856:6476:1024/121555.848:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 24, 2023 12:16:12.38 [31856:6476:1024/121612.385:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 24, 2023 12:16:14.04 [31856:6476:1024/121614.043:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 24, 2023 12:17:22.31 [31856:6476:1024/121722.311:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 24, 2023 12:44:43.61 [31856:6476:1024/124443.611:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -7
+Oct 24, 2023 13:08:44.61 [31856:6476:1024/130017.679:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 24, 2023 13:09:09.84 [31856:1968:1024/130909.841:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 24, 2023 13:09:39.23 [31856:1968:1024/130939.225:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 24, 2023 13:10:13.55 [31856:1968:1024/131013.556:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 24, 2023 13:11:32.12 [31856:1968:1024/131132.124:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Oct 24, 2023 13:16:28.53 [31856:1968:1024/131628.535:ERROR:device_event_log_impl.cc(225)] [13:16:28.536] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)

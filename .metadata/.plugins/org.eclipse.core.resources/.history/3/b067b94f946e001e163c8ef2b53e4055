@@ -1,0 +1,37 @@
+function validateForm() {
+	var firstname = document.getElementById("firstname").value;
+	var lastname = document.getElementById("lastname").value;
+	var email = document.getElementById("email").value;
+
+	if (firstname === "") {
+		alert("First name must be filled out");
+		return false;
+	}
+
+	if (lastname === "") {
+		alert("Last name must be filled out");
+		return false;
+	}
+
+	if (email === "") {
+		alert("Email must be filled out");
+		return false;
+	}
+
+	var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	if (!email.match(emailPattern)) {
+		alert("Invalid email address format");
+		return false;
+	}
+
+	return true;
+}
+
+function validateFormSearch() {
+    var searchValue = document.getElementsByName("searchValue")[0].value;
+    if (searchValue.trim() === "") {
+        alert("Search value must be filled out");
+        return false;
+    }
+    return true;
+}
